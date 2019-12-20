@@ -1,0 +1,34 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/vaadin-ordered-layout/src/vaadin-vertical-layout.html">
+
+<dom-module id="grid-design">
+    <template>
+<style include="shared-styles">
+            :host {
+                display: block;
+                height: 100%;
+            }
+        </style>
+<vaadin-vertical-layout style="width: 100%; height: 100%;">
+    <p>First grid, without hyphen in id:</p>
+    <vaadin-grid id="hyphenless"></vaadin-grid>
+    <p>Second grid, with a hyphen in id:</p>
+    <vaadin-grid id="with-hyphen"></vaadin-grid>
+</vaadin-vertical-layout>
+</template>
+
+    <script>
+        class GridDesign extends Polymer.Element {
+            static get is() {
+                return 'grid-design';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(GridDesign.is, GridDesign);
+    </script>
+</dom-module>

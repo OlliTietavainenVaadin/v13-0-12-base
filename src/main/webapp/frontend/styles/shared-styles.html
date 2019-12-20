@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/lib/elements/custom-style.html">
+
+<dom-module id="custom-combo-box" theme-for="vaadin-combo-box">
+  <template>
+    <style>
+      :host(.hidden-toggle) [part="toggle-button"] {
+        display: none;
+      }
+    </style>
+  </template>
+</dom-module>
+
+
+<custom-style>
+  <style>
+    @keyframes v-progress-start {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+
+  </style>
+</custom-style>
